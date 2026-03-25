@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="singup.css">
+    <title>Krijo Llogari</title>
+</head>
+<body>
+    
+<nav>
+    <div class="logo">Smile care</div>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Ballina</a></li>
+        <li><a href="terminet.html">Terminet</a></li>
+        <li><a href="login.html" >Kyqu</a></li>
+        <li><a href="singup.html" class="active">Regjistrohu</a></li>
+        <li><a href="kontakti.html">Kontakti</a></li>
+    </ul>
+</nav>
+
+    <div class="singup-card">
+    <h2>Krijo Llogari</h2>
+<label for="username">Username</label>
+<input type="text" id="username" placeholder="Shkruaj username-in">
+<span class="error" id="username-error"></span>
+
+<label for="email">Email</label>
+<input type="email" id="email" placeholder="Shkruaj email-in">
+<span class="error" id="email-error"></span>
+
+<label for="phone">Numri i Telefonit</label>
+<input type="tel" id="phone" placeholder="Shkruaj numrin e telefonit">
+<span class="error" id="phone-error"></span>
+
+<label for="password">Fjalëkalimi</label>
+<input type="password" id="password" placeholder="Shkruaj fjalëkalimin">
+<span class="error" id="password-error"></span>
+
+<label for="confirm-password">Konfirmo Fjalëkalimin</label>
+<input type="password" id="confirm-password" placeholder="Përsërit fjalëkalimin">
+<span class="error" id="confirm-password-error"></span>
+
+<button type="button" onclick="validateSignup()">Regjistrohu</button>
+</div>
+
+<footer>
+    <div class="footer-bottom">
+        © 2025 All rights reserved.
+    </div>
+</footer>
+
+<script src="singup.js"></script>
+
+</body>
+</html>
