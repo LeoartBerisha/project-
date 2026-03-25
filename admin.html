@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin - Smile Care</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<nav>
+    <div class="logo">Smile care</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <ul class="nav-links">
+        <li><a href="index.html">Ballina</a></li>
+        <li><a href="terminet.html">Terminet</a></li>
+        <li><a href="login.html">Kyqu</a></li>
+        <li><a href="about.html">Rreth Nesh</a></li>
+        <li><a href="admin.html" class="active">Admin</a></li>
+        <li><a href="kontakti.html">Kontakti</a></li>
+    </ul>
+</nav>
+
+<main class="dashboard">
+    <section class="top">
+        <h1>Dashboard i Adminit</h1>
+        <p>Panel qendror per monitorim te perdoruesve, termineve dhe permbajtjes se platformes.</p>
+    </section>
+
+    <section class="stats-grid">
+        <article class="stat-card">
+            <h3>Perdorues aktiv</h3>
+            <p class="value">128</p>
+        </article>
+        <article class="stat-card">
+            <h3>Termine sot</h3>
+            <p class="value">24</p>
+        </article>
+        <article class="stat-card">
+            <h3>Mesazhe te reja</h3>
+            <p class="value">11</p>
+        </article>
+        <article class="stat-card">
+            <h3>Sherbime aktive</h3>
+            <p class="value">9</p>
+        </article>
+    </section>
+
+    <section class="panel-grid">
+        <article class="panel">
+            <h2>Veprime te Shpejta</h2>
+            <button type="button">Shto perdorues</button>
+            <button type="button">Shto sherbim</button>
+            <button type="button">Publiko njoftim</button>
+        </article>
+
+        <article class="panel">
+            <h2>Terminet e Fundit</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pacienti</th>
+                        <th>Data</th>
+                        <th>Ora</th>
+                        <th>Statusi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Arta K.</td>
+                        <td>25/03/2026</td>
+                        <td>10:00</td>
+                        <td><span class="badge done">Konfirmuar</span></td>
+                    </tr>
+                    <tr>
+                        <td>Leon D.</td>
+                        <td>25/03/2026</td>
+                        <td>11:30</td>
+                        <td><span class="badge pending">Ne pritje</span></td>
+                    </tr>
+                    <tr>
+                        <td>Erina M.</td>
+                        <td>25/03/2026</td>
+                        <td>13:00</td>
+                        <td><span class="badge done">Konfirmuar</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-bottom">© 2025 All rights reserved.</div>
+</footer>
+<script src="admin.js"></script>
+</body>
+</html>
