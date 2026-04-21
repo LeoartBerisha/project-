@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background:
+        radial-gradient(circle at top left, rgba(12, 151, 170, 0.22), transparent 28%),
+        linear-gradient(180deg, #f5fcff 0%, #edf6fb 48%, #f9fbff 100%);
+    color: #153243;
+}
+
+.page-shell {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 28px;
+}
+
+.top-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+    padding: 14px 18px;
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(45, 42, 38, 0.08);
+    border-radius: 22px;
+    backdrop-filter: blur(14px);
+}
+
+.brand {
+    margin-right: auto;
+    font-size: 26px;
+    font-weight: 800;
+    color: #0d5c63;
+    letter-spacing: 0.03em;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #0d5c63;
+    background: #fff;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+.menu-toggle {
+    display: none;
+    width: 46px;
+    height: 46px;
+    border: 0;
+    border-radius: 14px;
+    background: #fff;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    margin: 5px 0;
+    background: #0d5c63;
+    border-radius: 999px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.top-nav.menu-open .menu-toggle span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.top-nav.menu-open .menu-toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+.top-nav.menu-open .menu-toggle span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 24px;
+    align-items: center;
+    background: linear-gradient(135deg, #0d5c63 0%, #1296a5 100%);
+    color: #fff;
+    padding: 28px;
+    border-radius: 34px;
+    margin-bottom: 26px;
+    box-shadow: 0 28px 60px rgba(13, 92, 99, 0.22);
+}
+
+.eyebrow,
+.section-tag {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+.eyebrow {
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.16);
+}
+
+.hero-copy h1 {
+    margin: 12px 0;
+    font-size: clamp(32px, 5vw, 56px);
+    line-height: 1.06;
+}
+
+.hero-copy p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.hero-visual img {
+    width: 100%;
+    height: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 28px;
+    display: block;
+}
+
+.story-grid,
+.value-grid,
+.team-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.story-grid {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 26px;
+}
+
+.content-card {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 26px;
+    border-radius: 28px;
+    box-shadow: 0 18px 36px rgba(45, 42, 38, 0.08);
+}
+
+.accent-card {
+    background: linear-gradient(135deg, #3f2b22 0%, #8c4f30 100%);
+    color: #fff;
+}
+
+.accent-card p,
+.accent-card .section-tag {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.section-head {
+    margin-bottom: 18px;
+}
+
+.section-head h2 {
+    margin: 6px 0 0;
+    font-size: 34px;
+}
+
+.values-section,
+.team-feature {
+    margin-bottom: 26px;
+}
+
+.value-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.value-card {
+    background: linear-gradient(180deg, #ffffff 0%, #eefbfc 100%);
+    border: 1px solid rgba(13, 92, 99, 0.08);
+    border-radius: 24px;
+    padding: 24px;
+}
+
+.team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.team-card {
+    overflow: hidden;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 18px 36px rgba(45, 42, 38, 0.08);
+}
+
+.team-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.team-card div {
+    padding: 18px;
+}
+
+@media (max-width: 1024px) {
+    .hero,
+    .story-grid,
+    .value-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-shell {
+        padding: 16px;
+    }
+
+    .brand {
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .top-nav a {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .top-nav.menu-open a {
+        display: block;
+    }
+
+    .hero,
+    .content-card {
+        padding: 20px;
+    }
+
+    .section-head h2 {
+        font-size: 28px;
+    }
+}
