@@ -52,7 +52,7 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
             <article class="service-card">
                 <p class="section-tag">02</p>
                 <h2>Pastrimi Profesional</h2>
-                <p>Heqje e gureve dentare dhe mirembajtje per buzeqeshje me te fresket.</p>
+                <p>Heqje e gureve dentar dhe mirembajtje per buzeqeshje me te fresket.</p>
             </article>
             <article class="service-card">
                 <p class="section-tag">03</p>
