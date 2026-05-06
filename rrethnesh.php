@@ -102,7 +102,7 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
                 <article class="team-card">
                     <img src="doc4.jpeg" alt="Staf">
                     <div>
-                        <h3>Dr. Blendina Gashi</h3>
+                        <h3>Dr. Blendin Gashi</h3>
                         <p>Angazhim ne estetike dentare dhe krijimin e rezultateve natyrale.</p>
                     </div>
                 </article>

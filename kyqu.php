@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </header>
         <section class="content-card auth-card">
-            <h2>Hyr ne llogari</h2>
+            <h2>Kyqu ne llogari</h2>
             <?php if ($gabimet): ?>
                 <div class="message error">
                     <?php foreach ($gabimet as $gabim): ?>
